@@ -1,0 +1,56 @@
+  <%- include ("../admin_partials/header.ejs")   %>
+   
+  <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Simple Table</h4>
+                  <p class="card-category"> Here is a subtitle for this table</p>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          ID
+                        </th>
+                        <th>
+                          Başlık
+                        </th>
+                        <th>
+                          Yan Başlık
+                        </th>
+                        <th>
+                          Kategori
+                        </th>
+                        <th>
+                          Durum
+                        </th>
+                      </thead>
+                      <tbody>
+                        
+                          <% post.forEach((post, index) => { %>
+                        <tr>
+                        
+                            <td><%= post.id %></td>
+                            <td><%= post.title %></td>
+                            <td><%= post.side_header %></td>
+                            <td><%= post.category %></td>
+                            <td><%= post.broadcasting %></td>
+                           
+                        </tr>
+                       <% }) %>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <%- include ("../admin_partials/footer.ejs")%>
