@@ -39,6 +39,10 @@
                             <td><%= post.side_header %></td>
                             <td><%= post.category %></td>
                             <td><%= post.broadcasting %></td>
+                            <td><form id="add-row-form" action="/admin-user-delete-<%= post.id %>" method="post">
+                           <button  type="submit" class="btn btn-danger">Delete</button>
+                          </form></td>
+                            
                            
                         </tr>
                        <% }) %>
@@ -52,5 +56,6 @@
           </div>
         </div>
       </div>
-
+ <!-- Modal Delete Product-->
+           
     <%- include ("../admin_partials/footer.ejs")%>

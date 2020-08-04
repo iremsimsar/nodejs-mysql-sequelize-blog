@@ -1,6 +1,7 @@
 var express = require('express');
 var admin_router = express.Router();
 const postcontroller = require('../controller/post.controller');
+const usercontroller = require('../controller/user.controller');
 
 admin_router.get('/admin', function (req, res) {
     res.locals = {  title: 'admin' };
@@ -27,6 +28,10 @@ admin_router.get('/admin-post-save', function (req, res) {
 })
 
 admin_router.post('/admin-post-save',postcontroller.postsave );
+
+admin_router.post('/admin-user-update-:id',usercontroller.userupdate );
+
+admin_router.post('/admin-user-delete-:id',postcontroller.postDelete );
 
 admin_router.get('/admin-map', function (req, res) {
     res.locals = {  title: 'admin' };

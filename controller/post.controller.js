@@ -27,3 +27,11 @@ exports.PostList = (req, res ,result ) => {
     },
 )});
 }
+
+exports.postDelete = function (req, res) {
+	Post.destroy({
+		where: { id: req.params.id }
+	}).then(note =>
+		res.redirect('/admin-post-list')
+	)
+}

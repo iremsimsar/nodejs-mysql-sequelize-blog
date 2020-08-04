@@ -11,25 +11,40 @@
 						 <% if (post.broadcasting=='Yayınlandı') { %>
 			    			<div class="col-md-12">
 									<div class="blog-entry ftco-animate d-md-flex">
-									<% if (post.category=='Projeler') { %>
-										<a href="single.html" class="img img-2" style="background-image: url(images/projeler.jpeg);"></a>
+							
+
+
+									<% if (post.title=='Restapi') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/restapi.jpeg);"></a>
 									<% } %>
-									<% if (post.category=='Teknoloji') { %>
-										<a href="single.html" class="img img-2" style="background-image: url(images/teknoloji.jpeg);"></a>
+									<% if (post.title=='Socket.io') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/soketio.jpeg);"></a>
 									<% } %>
-									<% if (post.category=='Seyahatler') { %>
-										<a href="single.html" class="img img-2" style="background-image: url(images/seyahatler.jpeg);"></a>
+									<% if (post.title=='Veri Yapıları') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/veriyapıları.jpeg);"></a>
 									<% } %>
-									<% if (post.category=='Yemekler') { %>
-										<a href="single.html" class="img img-2" style="background-image: url(images/yemekler.jpeg);"></a>
+									<% if (post.title=='Kriptoloji') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/safranbolu.jpeg);"></a>
+									<% } %>
+									<% if (post.title=='Şanlıurfa') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/Şanlıurfa.jpeg);"></a>
+									<% } %>
+									<% if (post.title=='Kahramanmaraş') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/kahramanmaras.jpeg);"></a>
+									<% } %>
+									<% if (post.title=='Safranbolu') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/safranbolu.jpeg);"></a>
+									<% } %>
+									<% if (post.title=='Ankara') { %>
+										<a href="" class="img img-2" style="background-image: url(public/images/ankara.jpeg);"></a>
 									<% } %>
 							<div class="text text-2 pl-md-4">
-				              <h3 class="mb-2"><a href="single.html"> <td><%= post.title %></td></a></h3>
+				              <h3 class="mb-2"><a href=""> <td><%= post.title %></td></a></h3>
 							  <h6><%= post.side_header %></h6>
 				              <div class="meta-wrap">
 								<p class="meta">
 				              		<span><i class="icon-calendar mr-2"></i><%= post.date %></span>
-				              		<span><a href="single.html"><i class="icon-folder-o mr-2"></i><%= post.category %></a></span>
+				              		<span><a href=""><i class="icon-folder-o mr-2"></i><%= post.category %></a></span>
 				              		<span><i class="icon-comment2 mr-2"></i>5 Comment</span>
 				              	</p>
 			              	</div>

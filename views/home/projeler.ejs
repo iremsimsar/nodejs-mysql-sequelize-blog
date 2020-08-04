@@ -62,16 +62,30 @@
 								
 							<% if (post.category=='Projeler') { %>
 		    					<div class="blog-entry-2 ftco-animate">
-	    						<a href="single.html" class="img" style="background-image: url(images/image_1.jpg);"></a>
+								<% if (post.title=='Socket.io') { %>
+                         
+                            <img src="public/images/soketio.jpeg" style="height:400px; width:100%" alt="">
+                        <% } %>
+                        <% if (post.title=='Restapi') { %>
+                            <img src="public/images/restapi.jpeg" style="height:400px; width:100%" alt="">
+                        <% } %>
+                        <% if (post.title=='Veri Yapıları') { %>
+                            <img src="public/images/veriyapıları.jpeg" style="height:400px; width:100%" alt="">
+                        <% } %>
+                        <% if (post.title=='Kriptoloji') { %>
+                            <img src="public/images/veriyapıları.jpeg" style="height:400px;"  alt="">
+                        <% } %>
 	    						<div class="text pt-4">
 
 				              <h3 class="mb-4"><a href="#"><%= post.title %></a></h3>
 				              <p class="mb-4"><%= post.side_header %></p>
 				              <div class="author mb-4 d-flex align-items-center">
+							  
+                        
 				            		<a href="#" class="img" style="background-image: url(public/assets/img/faces/irem.jpeg);"></a>
 				            		<div class="ml-3 info">
 				            			<span>Yazar</span>
-				            			<h3><a href="/hakkimda">İrem Simsar</a>, <span><% post.date %></span></h3>
+				            			<h3><a href="/hakkimda">İrem Simsar</a>, <span><%= post.date %></span></h3>
 				            		</div>
 				            	</div>
 				              <div class="meta-wrap d-md-flex align-items-center">

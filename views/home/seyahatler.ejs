@@ -36,7 +36,7 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li ><a href="/">Anasayfa</a></li>
-					<li><a href="/blog">Yazılar</a></li>
+					<li><a href="/projeler">Projeler</a></li>
 					<li class="colorlib-active"><a href="/seyahatler">Seyahatler</a></li>
 					<li><a href="/hakkimda">Hakkımda</a></li>
 					<li><a href="/iletisim">İletişim</a></li>
@@ -63,7 +63,19 @@
 								
 							<% if (post.category=='Seyahatler') { %>
 		    					<div class="blog-entry-2 ftco-animate">
-	    						<a href="single.html" class="img" style="background-image: url(images/image_1.jpg);"></a>
+								<% if (post.title=='Şanlıurfa') { %>
+                         
+                            <img src="public/images/Şanlıurfa.jpeg" style="height:400px; width:100%" alt="">
+                        <% } %>
+                        <% if (post.title=='Kahramanmaraş') { %>
+                            <img src="public/images/kahramanmaras.jpeg" style="height:400px; width:100%" alt="">
+                        <% } %>
+                        <% if (post.title=='Safranbolu') { %>
+                            <img src="public/images/safranbolu.jpeg" style="height:400px; width:100%" alt="">
+                        <% } %>
+                        <% if (post.title=='Ankara') { %>
+                            <img src="public/images/ankara.jpeg" style="height:400px;  width:100%"   alt="">
+                        <% } %>
 	    						<div class="text pt-4">
 
 				              <h3 class="mb-4"><a href="#"><%= post.title %></a></h3>
